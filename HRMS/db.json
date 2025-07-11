@@ -1,0 +1,81 @@
+{
+  "employees": [
+    {
+      "id": "f648",
+      "name": "swikriti",
+      "email": "swi@gmail.com",
+      "department": "sales",
+      "designation": "junior",
+      "userType": "hr",
+      "salary": "500",
+      "password": "swikriti@123",
+      "date": "2025-07-10"
+    },
+    {
+      "id": "4ba1",
+      "name": "dibya",
+      "email": "dibya@gmail.com",
+      "department": "marketing",
+      "designation": "senior",
+      "userType": "hr",
+      "salary": "60000",
+      "password": "dibya@123",
+      "date": "2025-07-10"
+    },
+    {
+      "id": "cf90",
+      "name": "swikriti",
+      "email": "swi@gmail.com",
+      "department": "marketing",
+      "designation": "midlevel",
+      "userType": "hr",
+      "salary": "60000",
+      "password": "swikriti@123",
+      "date": "2025-07-10"
+    },
+    {
+      "id": "639d",
+      "name": "swikriti",
+      "email": "swi@gmail.com",
+      "department": "marketing",
+      "designation": "midlevel",
+      "userType": "hr",
+      "salary": "5000",
+      "password": "swikriti@123",
+      "date": "2025-07-11"
+    },
+    {
+      "id": "77f1",
+      "name": "aashika",
+      "email": "aashika@gmail.com",
+      "department": "marketing",
+      "designation": "senior",
+      "userType": "hr",
+      "salary": "50000",
+      "password": "aashika123",
+      "date": "2025-07-11"
+    },
+    {
+      "id": "52de",
+      "name": "rita",
+      "email": "rita@gmail.com",
+      "department": "sales",
+      "designation": "senior",
+      "userType": "manager",
+      "salary": "678",
+      "password": "rita123",
+      "date": "2025-07-11"
+    },
+    {
+      "id": "32a6",
+      "name": "ismini",
+      "email": "ismini@gmail.com",
+      "department": "engineering",
+      "designation": "junior",
+      "userType": "hr",
+      "salary": "6789",
+      "password": "ismini123",
+      "date": "2025-07-11"
+    }
+  ]
+}
