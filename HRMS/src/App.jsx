@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import{Routes,Route} from "react-router-dom"
 import LoginForm from "./pages/login";
 import Home from './pages/home'
 import Dashboard from './pages/dashboard'
 import Employee from './pages/Employee'
+import ProtectedRoute from './component/utils/protectedRoute'
 
 
 
@@ -17,7 +17,8 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<LoginForm/>}/>
-        <Route path='home' element={<Home/>}>
+        <Route path='home' element={
+          <ProtectedRoute><Home/></ProtectedRoute>}>
         <Route path='employee' element={<Employee/>}/>
         <Route path='dashboard' element={<Dashboard/>}/>
        
