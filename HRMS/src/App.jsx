@@ -8,6 +8,8 @@ import Dashboard from './pages/dashboard'
 import Employee from './pages/Employee'
 import ProtectedRoute from './component/utils/protectedRoute'
 
+import Unauthorized from './component/utils/unauthorize';
+
 
 
 function App() {
@@ -17,9 +19,12 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<LoginForm/>}/>
+        <Route path="/Unauthorize" element={<Unauthorized/>}/>
         <Route path='home' element={
           <ProtectedRoute><Home/></ProtectedRoute>}>
-        <Route path='employee' element={<Employee/>}/>
+        <Route path='employee' element={
+          <ProtectedRoute allowedRoles={["hr","manager","admin"]}>
+          <Employee/></ProtectedRoute>}/>
         <Route path='dashboard' element={<Dashboard/>}/>
        
 

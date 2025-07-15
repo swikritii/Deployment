@@ -5,16 +5,13 @@ import { FaPlus } from "react-icons/fa";
 import SearchSelect from "../component/employee/selectsearch";
 import EmployeeCard from "../component/employee/employeeCard";
 import EmployeeForm from "../component/employee/employeeform";
-import employees from "../component/employee/employees";
 import axios from "axios";
-
-
 export default function Employee() {
   const [modelform, setModelForm ] = useState(false);
   const[employees,setEmployees]=useState([]);
   const[editEmployee,setEditEmployee]=useState(null);
 
-  employees.jsx 
+ 
 const fetchEmployees= async () => {
     const token = localStorage.getItem("token");
     try{
