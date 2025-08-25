@@ -17,7 +17,7 @@ const fetchEmployees= async () => {
     try{
       const res = await axios.get("http://localhost:8000/employee",{
       headers: {
-        Authorization:` Bearer ${token}`,
+        Authorization: `Bearer ${token}`,
       },
     });
     setEmployees(res.data.data);
@@ -42,7 +42,7 @@ const handleDelete =async (_id)=>{
       },
     });
  
-setEmployees((prev)=> prev.filter((emp)=> emp.id!==_id));
+setEmployees((prev)=> prev.filter((emp)=> emp._id!==_id));
 alert("Employee deleted successfully!");
 }
 catch (error){
