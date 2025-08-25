@@ -35,7 +35,7 @@ export default function EmployeeForm({setEmployees,setModelForm,editEmployee,set
             !salary ||
             !password||
             !confirmPassword
-        ){
+        ) {
             alert("Please fill out all the fields.")
             return;
         }
@@ -59,26 +59,26 @@ export default function EmployeeForm({setEmployees,setModelForm,editEmployee,set
         try{
           if(editEmployee){
             const response=await axios.put(
-              `http://localhost:5000/employees/${editEmployee.id}`,
+              `http://localhost:8000/employee/${editEmployee._id}`,
               employeeData,
               {headers:{Authorization:`Bearer ${token}`}}
             );
             setEmployees((prev)=>
-            prev.map((emp) => (emp.id===editEmployee.id? response.data :emp)));
+            prev.map((emp) => (emp._id===editEmployee._id ? response.data.data :emp)));
             alert("Employee updated succesfully!");
             setEditEmployee(null);
           }else{
             const response =await axios.post(
-                "http://localhost:5000/employees",
+                "http://localhost:8000/employee",
                 employeeData,
                 {
                   headers:{
                         Authorization:`Bearer ${token}`,
 
-                    }
+                    },
                 }
             );
-            setEmployees((prev)=>[...prev,response.data]);
+            setEmployees((prev)=>[...prev,response.data.data]);
             setModelForm(false);
             if(response.status===201){
                 alert("Employee added successfully!");
