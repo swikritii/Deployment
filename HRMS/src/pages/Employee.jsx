@@ -2,7 +2,7 @@ import React, { useState,useEffect } from "react";
 
 import Button from "../component/employee/buttons";
 import { FaPlus } from "react-icons/fa";
-import SearchSelect from "../component/employee/selectsearch";
+import SearchSelect from "../component/employee/SearchSelect";
 import EmployeeCard from "../component/employee/employeeCard";
 import EmployeeForm from "../component/employee/employeeform";
 import axios from "axios";
